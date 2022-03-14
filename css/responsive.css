@@ -1,0 +1,70 @@
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    .how-works-area .right img {
+		margin-top: 40px;
+	}
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+    .how-works-area .right img {
+		margin-top: 40px;
+        max-width: 80%;
+        margin-left: 60px;
+	}
+
+	.features .tab-content  {
+		text-align: center;
+	  }
+
+	.section-footer {
+		padding: 10px 0 60px;
+	}
+
+	.footer .footer-ikuti {
+		text-align: center;
+		margin-top: 40px;
+	}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+	.login-box {
+		margin-top: 650px;
+	   max-width: 100%;
+	}
+	
+    .how-works-area .right img {
+		margin-top: 70px;
+	}
+
+	.how-works-area {
+		margin-top: 450px;
+	}
+
+	.section-harga h3 {
+		text-align: center;
+	}
+	.section-harga p {
+		text-align: center;
+	}
+	.section-harga img {
+		margin: 10px auto 20px;
+    	display: block;
+	}
+
+	.section-footer .footer {
+		text-align: center;
+	}
+
+	.footer .footer-logo {
+		margin-top: 30px;
+	}
+
+	
+}

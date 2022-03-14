@@ -1,0 +1,222 @@
+/* Font */
+body, button, input, select, optgroup, textarea {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/*
+* ==========================================================
+*     NAVBAR
+* ==========================================================
+*/
+nav.navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    
+  }
+  
+  nav.navbar .navbar-brand {
+    font-weight: 800;
+    font-size: 1.7rem;
+    color: #222;
+  }
+  
+  nav.navbar a.nav-link {
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 8px 0 0;
+  }
+  
+  nav.navbar a.nav-link:hover, nav.navbar a.nav-link.active {
+    color: #5989e5;
+  }
+  
+  nav.navbar .navbar-btn {
+    margin-left: 15px;
+  }
+  
+  nav.navbar .navbar-toggler {
+    outline: none;
+  }
+  
+  nav.navbar .navbar-toggler span {
+    width: 25px;
+    margin: 5px;
+    display: block;
+    height: 2px;
+    background: #333;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  
+  nav.navbar .navbar-toggler.active span:first-of-type {
+    -webkit-transform: rotate(45deg) translate(10px);
+    transform: rotate(45deg) translate(10px);
+  }
+  
+  nav.navbar .navbar-toggler.active span:last-of-type {
+    -webkit-transform: rotate(-45deg) translate(10px);
+    transform: rotate(-45deg) translate(10px);
+  }
+  
+  nav.navbar .navbar-toggler.active span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .header {
+    box-shadow: 0 0 3px rgb(51 51 51 / 15%);
+}
+
+.header .top-bar {
+    padding-top: 10px;
+    height: 45px;
+    background-color: #c81423;
+}
+
+.header .top-bar .contact-info {
+    margin-left: -40px;
+}
+
+.header .top-bar .top-links li {
+    display: inline-block;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 200;
+    border-right: 1px solid #d4d3d2;
+    padding: 0px 13px;
+}
+
+.header .top-bar .top-links li:first-child {
+    padding-left: 0;
+}
+
+.header .top-bar .top-links li:last-child {
+    padding-right: 0;
+    border: none;
+}
+
+.header .top-bar .top-links li i {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 15px;
+    color: #fff;
+    position: relative;
+}
+
+.header .top-bar .top-links li a {
+    color: #fff;
+}
+
+.header .top-bar .top-links li a:hover {
+    color: #999999;
+    transition: 0.5s;
+}
+  
+  /* Navbar Mediaquery ----------------------------------- */
+  @media (max-width: 1199px) {
+    nav.navbar .navbar-btn {
+      margin-left: 0;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    nav.navbar {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+  }
+  
+
+  /* Hero/ Jumbotron Section */
+
+  .hero .jumbotron {
+    background-image: url(https://firnasembako.online/wp-content/uploads/2021/03/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 740px;
+    text-align: center;
+    position: relative; 
+  }
+
+  .hero .jumbotron .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero .jumbotron::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 130%;
+    height: 95%;
+    background: linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url(https://bootstrapmade.com/demo/templates/Moderna/assets/img/hero-bg.jpg) center top no-repeat;
+    z-index: 0;
+    border-radius: 0 0 50% 50%;
+    transform: translateX(-50%) rotate(0deg);
+  }
+
+  .hero .jumbotron .display-4 {
+    color: #fff;
+    margin-top: 200px;
+    font-weight: 500;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .8);
+    font-size: 40px;
+    margin-bottom: 30px;
+    padding: 0px 100px 0 100px;
+  }
+  
+  
+  /* ===================================================================
+      SCROLL TO TOP BUTTON
+  ===================================================================  */
+  #scrollTop {
+    width: 80px;
+    height: 40px;
+    position: fixed;
+    right: -90px;
+    bottom: 50%;
+    background-color: #5989e5;
+    background-image: -webkit-gradient(linear, left top, right top, from(#5989e5), to(#37cfdc));
+    background-image: linear-gradient(to right, #5989e5, #37cfdc);
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    font-size: 0.7rem;
+    cursor: pointer;
+    z-index: 9998;
+    padding-right: 10px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+  #scrollTop.active {
+    right: -50px;
+  }
+  
+  #scrollTop i {
+    font-size: 1.1rem;
+    margin-right: 10px;
+  }
+  
+  #scrollTop:hover {
+    right: 0;
+  }
+  
+  /* Scroll Top Media Query ------------------------- */
+  @media (max-width: 1199px) {
+    #scrollTop {
+      display: none !important;
+    }
+  }
+  
